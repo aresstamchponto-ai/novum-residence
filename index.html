@@ -1592,7 +1592,7 @@
     // Kirim WA
     function kirimWA() {
   const nama   = document.querySelector('.kontak-form input[type="text"]').value.trim();
-  const wa     = document.querySelector('.kontak-form input[type="tel"]').value.trim();
+  const wa     = document.querySelector('.kontak-form input[type="email"]').value.trim();
   const kamar  = document.querySelector('.kontak-form select').value;
   const pesan  = document.querySelector('.kontak-form textarea').value.trim();
 
@@ -1604,7 +1604,7 @@
   const teks = `Halo Novum Residence! 👋
 
 Nama: ${nama}
-No. WhatsApp: ${wa}
+Email: ${wa}
 Tipe Kamar: ${kamar || 'Belum dipilih'}
 Pesan: ${pesan || '-'}`;
 
