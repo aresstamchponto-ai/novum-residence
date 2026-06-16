@@ -558,6 +558,8 @@
       transition: transform .4s cubic-bezier(.16, 1, .3, 1), border-color .3s;
       cursor: pointer;
       position: relative;
+      display: flex;
+      flex-direction: column;
     }
 
     .room-card:hover {
@@ -650,6 +652,9 @@
 
     .room-body {
       padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
     }
 
     .room-badge {
@@ -715,6 +720,7 @@
       border-top: 1px solid var(--border);
       flex-wrap: wrap;
       gap: .8rem;
+      margin-top: auto;
     }
 
     .room-price {
@@ -1175,7 +1181,7 @@
 
   <!-- NAV -->
   <nav id="navbar">
-    <span class="nav-logo">NOVUM</span>
+    <span class="nav-logo">NOVUM RESIDENCE</span>
     <ul class="nav-links">
       <li><a href="#about">Tentang</a></li>
       <li><a href="#kamar">Kamar</a></li>
@@ -1193,7 +1199,7 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-eyebrow">Kos Eksklusif — Manado</p>
-      <h1 class="hero-title">NOVUM<br><span>RESIDENCE</span></h1>
+      <h1 class="hero-title">Home<br><span>Near Campus</span></h1>
       <p class="hero-sub">Langkah kaki dari kampus, selangkah lebih aman dengan teknologi sidik jari. Kenyamanan total
         untuk masa depanmu.</p>
       <div class="hero-actions">
@@ -1203,60 +1209,6 @@
     </div>
     <div class="scroll-hint"><span>Scroll</span>
       <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="about-bg"></div>
-    <div class="about-inner">
-      <p class="section-label reveal">Tentang Kami</p>
-      <h2 class="section-title reveal reveal-delay-1">ABOUT</h2>
-      <div class="section-rule reveal reveal-delay-2"></div>
-      <div class="about-grid">
-        <div class="glass-card reveal">
-          <h3>ALAMAT KOS</h3>
-          <div class="map-placeholder">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4199702345713!2d124.88531847528925!3d1.5169864984688044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3287a06a5309a8d3%3A0xe93b31353d54978!2sNovum%20Residence!5e0!3m2!1sid!2sid!4v1774598625447!5m2!1sid!2sid"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <p class="map-address">Jl. Raya Politeknik No.192, Kairagi Dua, Kec. Mapanget, Kota Manado.</p>
-        </div>
-        <div class="glass-card reveal reveal-delay-2">
-          <h3>KEUNGGULAN KOS</h3>
-          <ul class="keunggulan-list">
-            <li>Air mengalir 24 jam, tidak pernah mati</li>
-            <li>Kebersihan terjaga — dibersihkan langsung oleh pemilik</li>
-            <li>Dekat Kampus Politeknik Negeri Manado (2 Menit)</li>
-            <li>Jarak ke pusat kota 20 menit</li>
-            <li>Akses pintu utama menggunakan sidik jari (fingerprint)</li>
-            <li>CCTV terpasang di seluruh area kost</li>
-            <li>Tempat parkir luas untuk motor dan mobil</li>
-            <li>Tempat jemuran tersedia di lantai 1 dan lantai 2</li>
-            <li>Lokasi strategis, dekat dengan kampus dan fasilitas umum</li>
-          </ul>
-        </div>
-      </div>
-      <div class="stats-bar reveal">
-        <div class="stat-item">
-          <div class="stat-label">Lantai</div>
-          <div class="stat-value">2</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-label">Tipe Kamar</div>
-          <div class="stat-value">3</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-label">Jumlah Kamar</div>
-          <div class="stat-value">25</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-label">Jam Buka – Tutup</div>
-          <div class="stat-value" style="font-size:1.9rem">05.00–23.00</div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -1296,7 +1248,7 @@
       </div>
 
       <!-- Standard -->
-      <div class="room-card reveal reveal-delay-1" id="card-standard" style="margin-top:2rem">
+      <div class="room-card reveal reveal-delay-1" id="card-standard">
         <div class="room-status-tag" id="tag-standard"></div>
         <div class="room-img"><img src="foto.jpg" alt="Kamar Standard" loading="lazy" /></div>
         <div class="room-body">
@@ -1351,6 +1303,60 @@
     </div>
   </section>
 
+   <!-- ABOUT -->
+  <section id="about">
+    <div class="about-bg"></div>
+    <div class="about-inner">
+      <p class="section-label reveal">Tentang Kami</p>
+      <h2 class="section-title reveal reveal-delay-1">ABOUT</h2>
+      <div class="section-rule reveal reveal-delay-2"></div>
+      <div class="about-grid">
+        <div class="glass-card reveal">
+          <h3>ALAMAT KOS</h3>
+          <div class="map-placeholder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4199702345713!2d124.88531847528925!3d1.5169864984688044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3287a06a5309a8d3%3A0xe93b31353d54978!2sNovum%20Residence!5e0!3m2!1sid!2sid!4v1774598625447!5m2!1sid!2sid"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p class="map-address">Jl. Raya Politeknik No.192, Kairagi Dua, Kec. Mapanget, Kota Manado.</p>
+        </div>
+        <div class="glass-card reveal reveal-delay-2">
+          <h3>KEUNGGULAN KOS</h3>
+          <ul class="keunggulan-list">
+            <li>Air mengalir 24 jam, tidak pernah mati</li>
+            <li>Kebersihan terjaga — dibersihkan langsung oleh pemilik</li>
+            <li>Dekat Kampus Politeknik Negeri Manado (2 Menit)</li>
+            <li>Jarak ke pusat kota 20 menit</li>
+            <li>Akses pintu utama menggunakan sidik jari (fingerprint)</li>
+            <li>CCTV terpasang di seluruh area kost</li>
+            <li>Tempat parkir luas untuk motor dan mobil</li>
+            <li>Tempat jemuran tersedia di lantai 1 dan lantai 2</li>
+            <li>Lokasi strategis, dekat dengan kampus dan fasilitas umum</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stats-bar reveal">
+        <div class="stat-item">
+          <div class="stat-label">Lantai</div>
+          <div class="stat-value">2</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Tipe Kamar</div>
+          <div class="stat-value">3</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Jumlah Kamar</div>
+          <div class="stat-value">25</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Jam Buka – Tutup</div>
+          <div class="stat-value" style="font-size:1.9rem">05.00–23.00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <!-- FASILITAS -->
   <section id="fasilitas">
     <div class="fasil-grid">
